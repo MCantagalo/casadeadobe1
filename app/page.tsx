@@ -1,4 +1,3 @@
-<script>window.location = "public/index.html"</script>
 import Image from 'next/image'
 import styles from './page.module.css'
 
@@ -8,6 +7,7 @@ export default function Home() {
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
+          <script>window.location = "public/index.html"</script>
           <code className={styles.code}>app/page.tsx</code>
         </p>
       </div>
