@@ -1,3 +1,4 @@
+<script>window.location = "public/index.html"</script>
 import Image from 'next/image'
 import styles from './page.module.css'
 
