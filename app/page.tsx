@@ -8,7 +8,7 @@ export default function Home() {
         <p>
           Get started by editing&nbsp;
           <script>window.location = "public/index.html"</script>
-          <code className={styles.code}>app/page.tsx</code>
+          <code className={styles.code}>app/Michel.tsx</code>
         </p>
       </div>
 
