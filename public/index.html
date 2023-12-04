@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <meta charset="utf-8"> <!-- Define o conjunto de caracteres que será usado na página-->
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FRWVTS70CH"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FRWVTS70CH');
+        </script>
+        </head>
+        <body>
+        <h1>
+            <a href="indexPT.html">PORTUGUÊS</a>
+            <a href="indexEN.html">ENGLISH</a>
+            <a href="indexIT.html">ITALIANO</a>
+        </h1>
+    </body>
+    <script>
+    var userLocale = navigator.languages;
+    var counter = 0;
+    while (counter < userLocale.length) {
+        if (userLocale[counter] === "pt-BR") {
+            window.location = "indexPT.html";
+            counter = userLocale.length;
+        }
+        if (userLocale[counter] === "pt") {
+            window.location = "indexPT.html";
+            counter = userLocale.length;
+        }
+        if (userLocale[counter] === "it") {
+            window.location = "indexIT.html";
+            counter = userLocale.length;
+        }
+        if (userLocale[counter] === "en-US") {
+            window.location = "indexEN.html";
+            counter = userLocale.length;
+        }
+        if (userLocale[counter] === "en") {
+            window.location = "indexEN.html";
+            counter = userLocale.length;
+        }
+        if (counter === (userLocale.length - 1)) { window.location = "indexEN.html"; }
+        counter++;
+    }
+    </script>
+</html>
